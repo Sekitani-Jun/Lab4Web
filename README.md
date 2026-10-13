@@ -44,14 +44,12 @@
 
 | Keterangan | Data Mahasiswa |
 | :--- | :--- |
-| **Nama Lengkap** | **Margent Ouwn Sitompul** |
-| **NIM** | **312510463** |
+| **Nama Lengkap** | **Jumari** |
+| **NIM** | **312510077** |
 | **Kelas** | Teknik Informatika |
 | **Mata Kuliah** | Pemrograman Web |
 | **Dosen Pengampu** | Agung Nugroho, M.Kom |
 | **Instansi** | Universitas Pelita Bangsa |
-| **Portofolio 1** | [https://kasir-prefektur.gt.tc/](https://kasir-prefektur.gt.tc/) |
-| **Portofolio 2** | [https://topupgames.gt.tc/](https://topupgames.gt.tc/) |
 
 ---
 
