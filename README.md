@@ -1,84 +1,147 @@
-# Lab 4 Web — Layout Sederhana
+# Laporan Praktikum Lab 4 Web
 
-Proyek praktikum Pemrograman Web yang membahas penyusunan layout halaman menggunakan elemen HTML, CSS `float`, dan clearfix. Materi dimulai dari eksperimen box element, lalu diterapkan pada situs sederhana dengan navigasi, konten utama, sidebar, dan footer.
+## Layout Sederhana
 
-## Tujuan Praktikum
+Praktikum ini mempelajari penyusunan elemen halaman web menggunakan HTML dan CSS. Materi dimulai dengan mengamati susunan box sebelum dan sesudah memakai `float`, dilanjutkan dengan percobaan `clear`, lalu menerapkan konsep layout pada situs sederhana.
 
-- Memahami alur elemen HTML block dan pengaruh CSS `float`.
-- Mencoba posisi `left`, `right`, dan `clear` pada box.
-- Mengatasi elemen induk yang tidak mencakup elemen float dengan clearfix.
-- Menyusun halaman menggunakan elemen semantik seperti `header`, `nav`, `section`, `article`, `aside`, dan `footer`.
-- Menerapkan layout pada halaman Home, Artikel, About, dan Kontak.
+Implementasi pada repositori ini terdiri dari latihan box di `lab4_layout.html` dan situs beberapa halaman di `Lab4WebSederhana/`. Gambar pada setiap bagian berikut memperlihatkan hasil yang tersimpan di folder `screenshoot/`.
+
+## Tujuan
+
+- Mengamati susunan normal elemen block dan perubahan posisinya dengan `float`.
+- Mempraktikkan `float: left`, `float: right`, dan penggunaan `clear` setelah elemen float.
+- Menyusun kerangka halaman menggunakan header, navigasi, hero, konten utama, sidebar, dan footer.
+- Menerapkan layout tersebut pada halaman Home, Artikel, About, dan Kontak.
 
 ## Struktur Proyek
 
 ```text
 Lab4Web/
-├── lab4_layout.html             # Latihan/eksperimen box element dan float
+├── lab4_layout.html
 ├── Lab4WebSederhana/
-│   ├── home.html                # Beranda dan contoh layout utama
-│   ├── artikel.html             # Halaman artikel dengan sidebar
-│   ├── about.html               # Profil dan portofolio
-│   ├── kontak.html              # Formulir dan informasi kontak
-│   └── style.css                # Gaya bersama untuk seluruh halaman
-├── screenshoot/                 # Dokumentasi tahapan praktikum
+│   ├── home.html
+│   ├── artikel.html
+│   ├── about.html
+│   ├── kontak.html
+│   └── style.css
+├── screenshoot/
 └── README.md
 ```
 
-## Halaman Situs
+`lab4_layout.html` adalah latihan box element. Halaman-halaman di `Lab4WebSederhana/` berbagi aturan tampilan dari `style.css`.
 
-| Halaman | Isi |
-| --- | --- |
-| Home | Hero panel, tiga box konten, artikel ringkas, dan widget sidebar |
-| Artikel | Artikel tentang kemajuan teknologi AI dan sidebar kategori/populer |
-| About | Profil, deskripsi diri, minat akademik, dan portofolio |
-| Kontak | Formulir pesan, informasi kontak, dan jam operasional |
+## 1. Percobaan Box Element
 
-Semua halaman menggunakan stylesheet bersama, yaitu `Lab4WebSederhana/style.css`.
+### Tanpa float
+
+Ketiga box tampil sebagai elemen block yang memenuhi lebar area dan tersusun vertikal.
+
+![Hasil box element tanpa float](screenshoot/box%20elemen%20tanpa%20float.png)
+
+### Menggunakan float
+
+Setelah elemen diberi float, Div 1, Div 2, dan Div 3 terlihat berdampingan di sisi kiri.
+
+![Hasil box element dengan float](screenshoot/box%20elemen%20pakai%20float.png)
+
+### Percobaan left, right, both, dan center
+
+Screenshot memperlihatkan Div 1 di sisi kiri, Div 2 di sisi kanan, dan Div 3 di antara keduanya. Div 4 berada di baris berikutnya. Pada HTML latihan, `float: both` dan `float: center` bukan nilai CSS yang valid; `clear: left` dan `float: none` pada Div 4 membuatnya mulai setelah float di kiri.
+
+![Eksperimen posisi float dan clear](screenshoot/box%20elemen%20eksperimen%20%28left%2C%20right%2C%20both%2C%20center%29.png)
+
+### Hasil percobaan clear
+
+Pada screenshot ini, Div 1 dan Div 2 berada dalam satu baris, sementara Div 4 tampil sebagai blok biru pada baris setelah elemen float.
+
+![Hasil percobaan clear pada box](screenshoot/box%20elemen%20clearfix.png)
+
+## 2. Penyusunan Layout Sederhana
+
+Tahap ini menunjukkan perkembangan kerangka halaman dari header hingga hero dan footer. Beberapa screenshot merupakan potongan tampilan pada tahap tertentu, sehingga tidak semuanya memperlihatkan halaman lengkap.
+
+### Kerangka layout
+
+Kerangka awal menampilkan judul “Layout Sederhana”, navigasi Beranda/Artikel/About/Kontak, dan teks copyright.
+
+![Kerangka layout sederhana](screenshoot/kerangka%20layout%20sederhana.png)
+
+Screenshot kerangka berikutnya memperlihatkan judul, tautan navigasi, dan copyright dalam tampilan HTML dasar.
+
+![Kerangka header layout sederhana](screenshoot/kerangka%20header%20layout%20sederhana.png)
+
+### Header dan navigasi
+
+Tahap header menampilkan judul merah “Layout Sederhana”.
+
+![Layout header](screenshoot/layout%20header.png)
+
+Navigasi menambahkan menu Home, Artikel, About, dan Kontak di bawah header.
+
+![Layout navigasi](screenshoot/layout%20navigasi.png)
+
+### Hero
+
+Bagian hero berisi judul “Hello World!”, paragraf pengantar, dan tautan “Learn more”.
+
+![Layout hero](screenshoot/layout%20hero.png)
+
+Screenshot panel hero memperlihatkan hero dalam halaman lengkap bersama header, navigasi, dan footer.
+
+![Layout hero panel](screenshoot/layout%20hero%20panel.png)
+
+### Sidebar, konten utama, dan footer
+
+Sidebar berisi widget “Widget Header” dengan daftar tautan dan widget “Widget Text”.
+
+![Layout sidebar](screenshoot/layout%20sidebar.png)
+
+Konten utama menampilkan tiga box dengan gambar lingkaran, heading, deskripsi, dan tautan “View detail”, berdampingan dengan widget sidebar.
+
+![Elemen tambahan pada main content](screenshoot/menambahkan%20elemen%20lain%20pada%20main%20content.png)
+
+Footer menampilkan latar merah dengan teks “© 2021 - Universitas Pelita Bangsa”.
+
+![Pengaturan footer](screenshoot/mengatur%20footer.png)
+
+## 3. Halaman pada Lab4WebSederhana
+
+Menu pada setiap halaman menghubungkan Home, Artikel, About, dan Kontak. Tampilan situs menggunakan stylesheet bersama `style.css`.
+
+### Home
+
+Halaman Home menggabungkan hero, tiga box ringkasan, dua featurette dengan gambar yang bergantian di kiri dan kanan, serta sidebar widget.
+
+### Artikel
+
+Screenshot halaman artikel memperlihatkan artikel “Kemajuan Teknologi AI: Transformasi di Era Digital”, gambar utama, isi artikel, kutipan, kategori artikel, dan daftar artikel populer.
+
+![Halaman artikel tentang AI](screenshoot/menambahkan%20konten%20artikel.png)
+
+Screenshot bernama `menambahkan bagian artikel html.png` menampilkan dua bagian featurette: gambar berada di kiri pada bagian pertama dan di kanan pada bagian kedua.
+
+![Hasil featurette dengan gambar kiri dan kanan](screenshoot/menambahkan%20bagian%20artikel%20html.png)
+
+### About
+
+Halaman About menampilkan kartu profil Jumari, deskripsi diri dan minat akademik, serta tiga kartu portofolio.
+
+![Halaman About](screenshoot/menambahkan%20bagian%20about%20html.png)
+
+### Kontak
+
+Halaman Kontak menampilkan formulir nama, email, telepon, pesan, tombol “Kirim Pesan”, informasi kontak, dan jam operasional.
+
+![Halaman Kontak](screenshoot/menambahkan%20layout%20bagian%20kontak%20html.png)
 
 ## Menjalankan Proyek
 
-Tidak diperlukan proses build atau instalasi dependensi. Buka `Lab4WebSederhana/home.html` di browser, kemudian gunakan menu navigasi untuk berpindah halaman.
+Tidak diperlukan proses build atau instalasi. Buka `Lab4WebSederhana/home.html` di browser, lalu pilih halaman lain melalui menu navigasi. Latihan box dapat dibuka langsung melalui `lab4_layout.html`.
 
-> Beberapa gambar contoh menggunakan layanan `dummyimage.com`, sedangkan font dimuat dari Google Fonts. Keduanya memerlukan koneksi internet; gambar atau font tersebut dapat tidak tampil ketika offline.
+Gambar contoh pada halaman situs menggunakan `dummyimage.com`, dan font menggunakan Google Fonts, sehingga keduanya memerlukan koneksi internet.
 
-## Tahapan Praktikum dan Screenshot
+## Catatan
 
-Folder `screenshoot/` menyimpan dokumentasi visual proses pengerjaan. Urutan berikut dikelompokkan berdasarkan materi dan nama file yang tersedia.
-
-### 1. Box element, float, dan clearfix
-
-- [Box tanpa float](screenshoot/box%20elemen%20tanpa%20float.png) — box tersusun normal secara vertikal.
-- [Box menggunakan float](screenshoot/box%20elemen%20pakai%20float.png) — perubahan susunan setelah elemen diberi `float`.
-- [Eksperimen arah float](screenshoot/box%20elemen%20eksperimen%20%28left%2C%20right%2C%20both%2C%20center%29.png) — percobaan posisi `left`, `right`, `both`, dan `center`.
-- [Contoh clearfix](screenshoot/box%20elemen%20clearfix.png) — penggunaan clear untuk mengatur alur setelah elemen float.
-
-### 2. Penyusunan kerangka halaman
-
-- [Kerangka layout sederhana](screenshoot/kerangka%20layout%20sederhana.png)
-- [Kerangka header layout sederhana](screenshoot/kerangka%20header%20layout%20sederhana.png)
-- [Layout header](screenshoot/layout%20header.png)
-- [Layout navigasi](screenshoot/layout%20navigasi.png)
-- [Layout hero](screenshoot/layout%20hero.png)
-- [Layout hero panel](screenshoot/layout%20hero%20panel.png)
-- [Layout sidebar](screenshoot/layout%20sidebar.png)
-- [Elemen tambahan pada konten utama](screenshoot/menambahkan%20elemen%20lain%20pada%20main%20content.png)
-- [Pengaturan footer](screenshoot/mengatur%20footer.png)
-
-### 3. Pengembangan halaman
-
-- [Konten artikel](screenshoot/menambahkan%20konten%20artikel.png)
-- [Halaman Artikel](screenshoot/menambahkan%20bagian%20artikel%20html.png)
-- [Halaman About](screenshoot/menambahkan%20bagian%20about%20html.png)
-- [Halaman Kontak](screenshoot/menambahkan%20layout%20bagian%20kontak%20html.png)
-
-Contoh hasil halaman Artikel:
-
-![Screenshot halaman Artikel](screenshoot/menambahkan%20bagian%20artikel%20html.png)
-
-## Catatan Implementasi
-
-- `lab4_layout.html` berisi contoh latihan mandiri; saat ini markup eksperimennya berada dalam komentar HTML.
-- Situs pada folder `Lab4WebSederhana/` menggunakan satu file CSS untuk menjaga tampilan dan navigasi tetap konsisten.
-- Formulir pada halaman Kontak masih berupa tampilan antarmuka. Atribut `action="#"` belum mengirim atau menyimpan data ke backend.
-
+- `float: both` dan `float: center` pada latihan tidak valid sebagai nilai properti CSS `float`; browser mengabaikannya.
+- Formulir Kontak masih berupa antarmuka. `action="#"` belum mengirim atau menyimpan data ke backend.
+- CSS menetapkan lebar container sebesar `980px`; screenshot menunjukkan hasil visual pada ukuran layar saat dokumentasi dibuat.
