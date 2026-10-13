@@ -24,7 +24,7 @@
 
 | Keterangan | Data Mahasiswa |
 | :--- | :--- |
-| **Nama Lengkap** | **Jumari (Jun)** |
+| **Nama Lengkap** | **Jumari** |
 | **NIM** | **312510077** |
 | **Kelas** | Teknik Informatika |
 | **Mata Kuliah** | Pemrograman Web |
