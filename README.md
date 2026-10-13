@@ -110,3 +110,5 @@ Sebelum menerapkan float, tiga buah tag `<div>` berturut-turut ditampilkan. Kare
     <div class="div2">Div 2</div>
     <div class="div3">Div 3</div>
 </section>
+**Screenshoot Hasil:**
+![Box Element Tanpa Float](screenshoot
