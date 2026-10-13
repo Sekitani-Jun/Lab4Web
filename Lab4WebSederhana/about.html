@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html" class="active">About</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+
+      <section id="wrapper">
+        <!-- Single Layout (Full Width) -->
+        <section id="main-full">
+          <!-- Card Profil -->
+          <div class="profile-card">
+            <img
+              src="https://dummyimage.com/150/4285f4/fff.png&text=User"
+              alt="Profile Picture"
+              class="profile-img"
+            />
+            <div class="profile-info">
+              <h2>Jumari</h2>
+              <h4>
+                NIM: 312510077 | Teknik Informatika - Universitas Pelita Bangsa
+              </h4>
+              <p>
+                Halo! Selamat datang di halaman profil saya. Saya
+                <strong>Jumari</strong> biasa dipanggil <strong>Jun</strong>,
+                mahasiswa Program Studi Teknik Informatika di Universitas Pelita
+                Bangsa. Memiliki ketertarikan di bidang pengembangan web dan
+                Internet of Things (IoT). Saya senang mengeksplorasi teknologi
+                terbaru dalam pengembangan perangkat lunak dan aplikasi web.
+              </p>
+            </div>
+          </div>
+
+          <!-- Deskripsi Diri -->
+          <div class="about-section">
+            <h3 class="section-title">Deskripsi Diri & Minat Akademik</h3>
+            <p>
+              Praktikum Pemrograman Web Modul 4 ini mendalami teknik penyusunan
+              tata letak website menggunakan
+              <strong>Box Element, CSS Float, Clearfix,</strong> serta
+              <strong>HTML5 Semantic Elements</strong>. Fondasi ini diterapkan
+              secara terstruktur untuk membangun sistem website yang fungsional,
+              responsif, dan mudah dipelihara.
+            </p>
+          </div>
+
+          <!-- Portofolio -->
+          <div class="about-section">
+            <h3 class="section-title">Portofolio Karya & Proyek Web</h3>
+            <div class="row">
+              <div class="box">
+                <img
+                  src="https://dummyimage.com/250x150/ccc/fff.png"
+                  alt="Project 1"
+                  style="width: 100%; border-radius: 4px; margin-bottom: 10px"
+                />
+                <h4>Proyek Web 1</h4>
+                <p>Loren ipsum dolor sit amet.</p>
+              </div>
+              <div class="box">
+                <img
+                  src="https://dummyimage.com/250x150/ccc/fff.png"
+                  alt="Project 2"
+                  style="width: 100%; border-radius: 4px; margin-bottom: 10px"
+                />
+                <h4>Proyek Web 2</h4>
+                <p>Loren ipsum dolor sit amet.</p>
+              </div>
+              <div class="box">
+                <img
+                  src="https://dummyimage.com/250x150/ccc/fff.png"
+                  alt="Project 3"
+                  style="width: 100%; border-radius: 4px; margin-bottom: 10px"
+                />
+                <h4>Proyek Web 3</h4>
+                <p>Loren ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>

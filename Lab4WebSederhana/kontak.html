@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </nav>
+
+      <section id="wrapper">
+        <!-- Main Content: Formulir Kontak -->
+        <section id="main">
+          <div class="contact-header">
+            <h2>Hubungi Kami</h2>
+            <p>
+              Silakan tinggalkan pesan melalui form di bawah ini. Kami akan
+              membalas pesan Anda secepatnya.
+            </p>
+          </div>
+
+          <div class="form-container">
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukkan nama Anda..."
+                  required
+                />
+              </div>
+
+              <div class="form-group-half row-form">
+                <div class="half-col">
+                  <label for="email">Alamat Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email@domain.com"
+                    required
+                  />
+                </div>
+                <div class="half-col">
+                  <label for="telp">Nomor Telepon</label>
+                  <input
+                    type="tel"
+                    id="telp"
+                    name="telp"
+                    placeholder="0812-xxxx-xxxx"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="pesan">Pesan Anda</label>
+                <textarea
+                  id="pesan"
+                  name="pesan"
+                  rows="5"
+                  placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">Kirim Pesan</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Sidebar: Informasi Tambahan -->
+        <aside id="sidebar">
+          <div class="widget-box info-widget">
+            <h3 class="title">Informasi Kontak</h3>
+            <div class="info-content">
+              <h4>Alamat Kantor</h4>
+              <p>
+                Jl. Inspeksi Kalimalang No.9,<br />Cikarang Pusat, Kab.
+                Bekasi,<br />Jawa Barat 17530
+              </p>
+
+              <h4>Telepon</h4>
+              <p>(021) 1234-5678</p>
+
+              <h4>Email</h4>
+              <p>sekitanijun@pelitabangsa.ac.id</p>
+            </div>
+          </div>
+
+          <div class="widget-box">
+            <h3 class="title">Jam Operasional</h3>
+            <ul class="jam-buka">
+              <li>Senin - Jumat: <span>08:00 - 17:00</span></li>
+              <li>Sabtu: <span>08:00 - 14:00</span></li>
+              <li>Minggu: <span class="tutup">Tutup</span></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
